@@ -6,7 +6,13 @@ COPY . .
 
 RUN wget -O /opt/apache-activemq-5.17.1.tar.gz https://archive.apache.org/dist/activemq/5.17.1/apache-activemq-5.17.1-bin.tar.gz
 RUN tar -axvf /opt/apache-activemq-5.17.1.tar.gz
+
 RUN mv /opt/apache-activemq-5.17.1 /opt/apache-activemq
+
+RUN mv /opt/activemq.xml /opt/apache-activemq/conf/
+RUN mv /opt/groups.properties /opt/apache-activemq/conf/
+RUN mv /opt/users.properties /opt/apache-activemq/conf/
+
 RUN ln -s /opt/apache-activemq/bin/activemq /usr/bin/activemq
 
 EXPOSE 1883
