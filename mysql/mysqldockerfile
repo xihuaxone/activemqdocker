@@ -9,9 +9,9 @@ EXPOSE 3306
 
 # docker build -f mysqldockerfile -t mysql:8.2.0 .
 
-# docker save -o mysql:8.2.0.tar
+# docker save -o ./mysql_8.2.0.tar mysql:8.2.0
 
-# docker load -i mysql:8.2.0.tar
+# docker load -i ./mysql_8.2.0.tar
 
 # docker run -it -v H:\env\mysqlStore:/var/lib/mysql -p 3306:3306 mysql:8.2.0 /bin/bash
 

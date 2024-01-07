@@ -25,9 +25,9 @@ CMD [ "activemq", "console" ]
 
 # docker build -f activemqdockerfile -t activemq:v5.17.1 .
 
-# docker save -o activemq-5.17.1.tar
+# docker save -o ./activemq-5.17.1.tar activemq:v5.17.1
 
-# docker load -i activemq-5.17.1.tar
+# docker load -i ./activemq-5.17.1.tar
 
 # docker run -it -p 1883:1883 -p 8161:8161 activemq:v5.17.1 /bin/bash
 
