@@ -1,0 +1,19 @@
+FROM mysql:8.2.0
+
+ENV MYSQL_ROOT_PASSWORD=1865018650
+
+# 将MySQL的数据存储目录挂载到宿主机的目录下
+VOLUME var/lib/mysql
+
+EXPOSE 3306
+
+# docker build -f mysqldockerfile -t mysql:8.2.0 .
+
+# docker save -o mysql:8.2.0.tar
+
+# docker load -i mysql:8.2.0.tar
+
+# docker run -it -v H:\env\mysqlStore:/var/lib/mysql -p 3306:3306 mysql:8.2.0 /bin/bash
+
+# docker run -d -v H:\env\mysqlStore:/var/lib/mysql -p 3306:3306 mysql:8.2.0
+

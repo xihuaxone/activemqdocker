@@ -22,7 +22,7 @@ USER root
 
 CMD [ "activemq", "console" ]
 
-# docker build -t activemq:v5.17.1 .
+# docker build -f activemqdockerfile -t activemq:v5.17.1 .
 
 # docker save -o activemq-5.17.1.tar
 
