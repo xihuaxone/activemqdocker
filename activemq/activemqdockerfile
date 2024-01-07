@@ -12,6 +12,7 @@ RUN mv /opt/apache-activemq-5.17.1 /opt/apache-activemq
 RUN mv /opt/activemq.xml /opt/apache-activemq/conf/
 RUN mv /opt/groups.properties /opt/apache-activemq/conf/
 RUN mv /opt/users.properties /opt/apache-activemq/conf/
+RUN mv /opt/jetty.xml /opt/apache-activemq/conf/
 
 RUN ln -s /opt/apache-activemq/bin/activemq /usr/bin/activemq
 
